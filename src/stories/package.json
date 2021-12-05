@@ -1,0 +1,8 @@
+{
+  "name": "@vincent687/sc-storybook",
+  "version": "0.0.3",
+  "publishConfig": {
+    "tag": "beta",
+    "access": "public"
+  }
+}
