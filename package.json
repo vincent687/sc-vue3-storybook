@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=00399c51bbc1",
+    "deploy": "npm publish"
   },
   "dependencies": {
     "vue": "^3.2.16"
@@ -20,6 +22,7 @@
     "@vitejs/plugin-vue": "^1.9.3",
     "autoprefixer": "9",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.2.0",
     "postcss": "7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.4.3",

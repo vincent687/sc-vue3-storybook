@@ -1,6 +1,6 @@
 {
   "name": "@vincent687/sc-storybook",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publishConfig": {
     "tag": "beta",
     "access": "public"

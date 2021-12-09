@@ -35,7 +35,7 @@ GreenText.args = {
 export const RedText = Template.bind({});
 // // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 RedText.args = {
-  status: "success",
+  status: "danger",
   detail: "Pinapple Run Volunteer",
 };
 
