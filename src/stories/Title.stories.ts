@@ -1,34 +1,41 @@
-import CardTitle from "./CardTitle.vue";
+import TextTitle from "./TextTitle.vue";
 import { Story } from "@storybook/vue3";
 import "../../.storybook/utils.css";
 
 // // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: "CardTitle",
-  component: CardTitle,
+  title: "TextTitle",
+  component: TextTitle,
   //   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
     detail: "",
-    hoverTextColor: { control: "color" },
+    status: "",
   },
 };
 
 // // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
-const Template: Story<typeof CardTitle> = (args) => ({
+const Template: Story<typeof TextTitle> = (args) => ({
   //   // Components used in your story `template` are defined in the `components` object
-  components: { CardTitle },
+  components: { TextTitle },
   //   // The story's `args` need to be mapped into the template through the `setup()` method
   setup() {
     return { args };
   },
   //   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<card-title v-bind="args" />',
+  template: '<text-title v-bind="args" />',
 });
 
 export const GreenText = Template.bind({});
 // // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 GreenText.args = {
-  hoverTextColor: "red",
+  status: "success",
+  detail: "Pinapple Run Volunteer",
+};
+
+export const RedText = Template.bind({});
+// // More on args: https://storybook.js.org/docs/vue/writing-stories/args
+RedText.args = {
+  status: "success",
   detail: "Pinapple Run Volunteer",
 };
 
